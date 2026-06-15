@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마곡 유흥 꿀팁 블로그 - 현역 브로의 찐 리뷰</title>
+    <meta name="description" content="마곡 유흥의 모든 것! 현역 브로들이 직접 발로 뛰고 겪은 찐 꿀팁 대방출. 마곡에서 제대로 즐기고 싶다면 여기만 봐라. 전화 010-6279-0862, 지금 바로 콜!">
+    <meta name="keywords" content="마곡 유흥, 마곡 유흥 꿀팁, 마곡 밤문화, 마곡 술집 추천, 마곡 놀거리, 마곡 업소, 마곡 브로">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <link rel="canonical" href="https://t3b07-mg-night-tip-2.vercel.app/blog">
+    <meta property="og:title" content="마곡 유흥 꿀팁 블로그 - 현역 브로의 직격 리뷰">
+    <meta property="og:description" content="마곡 유흥 꿀팁. 가식 없는 리뷰, 찐 정보. 마곡에서 놀아본 놈이 알려준다. 전화 010-6279-0862">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        a {
+            color: #ff4444;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #ffffff;
+            background: #ff4444;
+            padding: 2px 4px;
+        }
+        img, svg {
+            max-width: 100%;
+            height: auto;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 3px solid #ff4444;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ff4444;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        .logo span {
+            color: #ffffff;
+            background: #ff4444;
+            padding: 0 8px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+        nav a {
+            color: #e0e0e0;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        nav a:hover {
+            color: #ffffff;
+            background: #ff4444;
+            padding: 5px 10px;
+        }
+        .hamburger {
+            display: none;
+            font-size: 2rem;
+            color: #ff4444;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+        .hamburger:active {
+            transform: scale(0.9);
+        }
+        .hero {
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            border: 3px solid #ff4444;
+            margin-bottom: 60px;
+            background: #222;
+        }
+        .hero::before {
+            content: "BRO TIP";
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            background: #ff4444;
+            color: #fff;
+            padding: 5px 15px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            color: #ff4444;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+            nav ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+                gap: 15px;
+                padding-top: 20px;
+            }
+            nav ul.active {
+                display: flex;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+        .blog-post {
+            background: #222;
+            border: 2px solid #ff4444;
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+        .blog-post h2 {
+            font-size: 2rem;
+            color: #ff4444;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            border-left: 5px solid #ff4444;
+            padding-left: 15px;
+        }
+        .blog-post p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #ccc;
+        }
+        .blog-post .highlight {
+            background: #ff4444;
+            color: #fff;
+            padding: 5px 10px;
+            font-weight: bold;
+        }
+        .blog-post .callout {
+            border: 2px dashed #ff4444;
+            padding: 20px;
+            margin: 30px 0;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        .blog-post .callout a {
+            font-size: 1.5rem;
+        }
+        .blog-post ul {
+            list-style: none;
+            padding: 0;
+        }
+        .blog-post ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #333;
+            font-size: 1.1rem;
+        }
+        .blog-post ul li::before {
+            content: ">> ";
+            color: #ff4444;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 3px solid #ff4444;
+            margin-top: 40px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #ff4444;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">MAGOK<span>BRO</span></div>
+            <button class="hamburger" onclick="document.querySelector('nav ul').classList.toggle('active')">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="/">홈</a></li>
+                    <li><a href="/blog">블로그</a></li>
+                    <li><a href="/review">리뷰</a></li>
+                    <li><a href="tel:010-6279-0862">전화걸기</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <h1>마곡 유흥 꿀팁 블로그</h1>
+            <p>가식 없는 리뷰, 찐 정보. 마곡에서 놀아본 놈이 알려준다.</p>
+        </section>
+
+        <article class="blog-post">
+            <h2>마곡 유흥, 너는 왜 계속 실패하냐?</h2>
+            <p>야, 마곡에서 놀아본 적 있냐? 없으면 닥치고 들어라. 여기는 가짜 리뷰로 도배된 곳이 아니다. 내가 3년 동안 마곡에서 밤을 새며 몸으로 부딪힌 경험을 그대로 풀어낸다. 너네가 인터넷에서 보는 그런 "꿀팁"은 개나 줘버려라. 진짜는 따로 있다.</p>
+            
+            <p>마곡 유흥, 왜 실패하는지 알아? 첫째, 타이밍을 못 맞춘다. 둘째, 돈을 아낀다. 셋째, 정보가 없다. 이 세 가지가 너를 망친다. 나도 처음엔 똑같은 실수를 했다. 하지만 지금은? 마곡에서 내가 모르는 업소가 없다. <span class="highlight">010-6279-0862</span>로 전화해라. 내가 직접 길을 알려준다.</p>
+
+            <div class="callout">
+                <p>🔥 <strong>찐 꿀팁:</strong> 마곡에서 제대로 즐기려면 목요일 밤을 노려라. 주말은 병신들만 간다. 진짜를 원하면 전화해라 <a href="tel:010-6279-0862">010-6279-0862</a></p>
+            </div>
+
+            <h3 style="color:#ff4444; margin-top:30px;">마곡 유흥의 3대 원칙</h3>
+            <ul>
+                <li><strong>원칙 1:</strong> 절대 첫 집에서 만족하지 마라. 마곡은 골목골목에 숨은 맛집(?)이 있다. 내가 추천하는 곳만 가라.</li>
+                <li><strong>원칙 2:</strong> 돈은 아끼지 마라. 싼 게 비지떡이다. 마곡에서 10만원 쓰면 5만원짜리 경험한다. 20만원은 써야 제맛.</li>
+                <li><strong>원칙 3:</strong> 정보는 현지인한테 들어라. 인터넷 찌라시 믿지 마라. 나처럼 발로 뛰는 놈한테 물어봐라. 전화는 <a href="tel:010-6279-0862">010-6279-0862</a></li>
+            </ul>
+
+            <p style="margin-top:30px;">마곡 유흥, 생각보다 단순하다. 하지만 대부분의 놈들은 기본도 모르고 깝친다. 너는 그런 병신 되지 마라. 내가 이 글을 쓰는 이유는 단 하나다. 진짜를 원하는 놈들한테 제대로 알려주려고. 마곡에서 놀고 싶으면 내 전화번호 하나면 끝난다. <span class="highlight">010-6279-0862</span>로 지금 바로 콜 넣어라.</p>
+
+            <p style="font-size:1.3rem; text-align:center; margin-top:40px; color:#ff4444;"><strong>마곡 유흥, 더 이상 헤매지 마라. 내가 다 알려준다.</strong></p>
+        </article>
+
+        <footer>
+            <p>© 2025 마곡브로 | 마곡 유흥의 모든 것 | <a href="tel:010-6279-0862">010-6279-0862</a></p>
+            <p>본 사이트는 성인 정보를 포함할 수 있습니다. 모든 콘텐츠는 현역 브로의 경험을 바탕으로 합니다.</p>
+        </footer>
+    </div>
+    <script>
+        // 햄버거 메뉴 기본 동작은 inline onclick으로 처리됨
+        // 추가 스크립트 필요 없음
+    </script>
+</body>
+</html>
